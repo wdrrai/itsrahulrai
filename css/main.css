@@ -45,38 +45,20 @@ a{
     align-items: center;
 }
 
-/* responsive css for mobile
-@media screen and (min-width: 720px){
-    .navbar{
-        font-size: 0.5em;
-    }
-
-    .img{
-        width: 10px;
-    }
-} */
-
 hr{
     margin: 50px;
     border: 2.2px solid rgba(3, 139, 5, 0.767);
 }
 
 .container{
-    /* border: 2px solid white; */
     margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* @media screen and (min-width: 720px){
-    .container{
-        display: column;
-    }
-} */
 
 .leftcont{
-    /* border: 2px solid red; */
     width: 50%;
 justify-content: center;
 }
@@ -162,7 +144,7 @@ p{
 }
 .social_link{
     display: flex;
-    background-color: #55ACEE;
+    background-color: #464a4d;
     height: 20vh;
     text-align: end;
     padding: 20px;
@@ -217,3 +199,185 @@ p{
     background: #010d26;
     color: white;
   }
+
+  /* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+
+    .logo img{
+        height: 5vh;
+        width: 80vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 10px;
+    }
+
+    .navsalink {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul {
+        /* flex-direction: column; */
+        padding: 10px 0;
+        font-size: 2em;
+    }
+
+    li {
+        margin: 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .leftcont, .rightcont {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 40px 20px;
+    }
+
+    #contimg {
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    .expcont {
+        grid-template-columns: 100%;
+        margin: 20px 10px;
+    }
+
+    #pragya1{
+        grid-area: 3;
+    }
+
+    .item {
+        height: auto;
+        padding: 15px;
+    }
+
+    .inlineli {
+        font-size: 1em;
+    }
+
+    .social_link {
+        /* flex-direction: column; */
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .fa {
+        margin: 5px;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .logo img{
+        height: 5vh;
+        width: 80vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 10px;
+    }
+
+    .navsalink {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navsalink {
+        /* flex-direction: column; */
+        align-items: center;
+        width: 100%;
+    }
+
+    ul {
+        /* flex-direction: column; */
+        margin: 5px;
+        font-size: 1.2em;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .leftcont, .rightcont {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 40px 20px;
+    }
+
+    #contimg {
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    .expcont {
+        grid-template-columns: 100%;
+        margin: 20px 10px;
+    }
+
+    .item > img{
+        width: 200px;
+        justify-content: center;
+    }
+    .item {
+        text-align: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .inlineli {
+        font-size: 1em;
+    }
+
+    .social_link {
+        grid-template-rows: 3, 4;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .fa {
+        margin: 5px;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+    .about_foot{
+        color: white;
+        background-color: transparent;
+        font-size: 1.5em;
+        align-items: center;
+        text-align: justify;
+    }
+}
